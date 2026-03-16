@@ -1,4 +1,4 @@
-# PalindroneCheckerApp
+# PalindromeCheckerApp
 Objective:
 To create PalindromeCheckerApp and display application start screen.
 
