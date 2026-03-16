@@ -1,18 +1,20 @@
 package PalindroneCheckerApp;
-public class UC1 {
+public class UC2 {
 
     public static void main(String[] args) {
 
-        
-        System.out.println("=================================");
-        System.out.println("      PALINDROME CHECKER APP     ");
-        System.out.println("=================================");
-        System.out.println("Version: 1.0");
-        System.out.println("Welcome to the Palindrome Checker Application!");
-        System.out.println("This application will check whether a string is a palindrome.");
-        System.out.println("=================================");
+        String word = "madam";  
 
+       
+        String reversed = "";
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
 
-        System.out.println("Program Started Successfully...");
+        if (word.equals(reversed)) {
+            System.out.println("The word \"" + word + "\" is a Palindrome.");
+        } else {
+            System.out.println("The word \"" + word + "\" is NOT a Palindrome.");
+        }
     }
 }
